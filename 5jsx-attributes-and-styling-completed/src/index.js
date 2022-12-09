@@ -6,7 +6,9 @@ const img = "https://picsum.photos/200";
 ReactDOM.render(
   <div>
     <h1 className="heading">My Favourite Foods</h1>
-    <img alt="random" src={img + "?grayscale"} />
+    
+    <img alt="random" 
+    src={img + "?grayscale"} />
 
     <img
       className="food-img"
