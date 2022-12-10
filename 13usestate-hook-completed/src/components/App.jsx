@@ -56,7 +56,7 @@ export default App;
 import React, { useState } from "react";
 
 function App() {
-  setInterval(updateTime, 1000);
+  setInterval(updateTime, 1000); //to update time every 1000secs
 
   const now = new Date().toLocaleTimeString();
 
