@@ -122,13 +122,13 @@ function App() {
   const [name, setName] = useState("");
   const [headingText, setHeading] = useState("");
 
-  function handleChange(event) {
-    console.log(event.target.value);
-    setName(event.target.value);
+  function handleChange(event) { //save added changes
+    // console.log(event.target.value);
+    setName(event.target.value); //here you are using actual input-value not js object-value
   }
 
   function handleClick(event) {
-    setHeading(name); //here you are using actual input-value not js object-value
+    setHeading(name); //you are setting the headingtext to target.value
 
     event.preventDefault();
   }
@@ -139,7 +139,7 @@ function App() {
       <form onSubmit={handleClick}>
       {/* control component */}
         <input
-          onChange={handleChange} //on change d event.target value in d input box is set in name-field & also set it has input-value 
+          onChange={handleChange} //on change d event.target value in d input box is saved in name-field  
           type="text"
           placeholder="What's your name?"
           value={name} //always set value to event.target.value
