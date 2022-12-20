@@ -12,7 +12,7 @@ import ReactDOM from "react-dom";
 // note:babel compile new version javascript to the needed javascript version any browser can understand
 
 
-ReactDOM.render(
+ReactDOM.render( //this only displays it within react dom/environment
   <div>
     <h1>My Favourite Foods</h1>
     <ul>
@@ -21,7 +21,7 @@ ReactDOM.render(
       <li>Jamon</li>
     </ul>
   </div>,
-  document.getElementById("root")
+  document.getElementById("root") //this displays it on the windows dom/enviroment
 );
 
 /////
@@ -41,7 +41,7 @@ const fName = "Angela";
 const lName = "Yu";
 const num = 7;
 
-ReactDOM.render(
+ReactDOM.render( 
   <div>
     <h1>Hello {fName + " " + lName}!</h1>
     <p>Your lucky number is {num}</p>
