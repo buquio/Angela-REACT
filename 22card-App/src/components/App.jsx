@@ -68,7 +68,11 @@ import ReactDOM from "react-dom";
 
 //Make one sample of similar set of div into a component
 //enter props.xxx for part that area changing repeatedly
-//using data from html(above) extract card component(<card />) & move it to card.js
+//using data from html(above) extract card component(<card />) & move it to card.jsx
+// Note: u can not put name,img.tel.email into { } becos card-component has not been created & moved to card.jsx
+//you can not continue to itemize card becos you have the data already stored in contacts.js
+//testing this with react.dom render
+//////card component withvreal details
 function Card(props) {
   return (
         <div className="card">
@@ -83,9 +87,6 @@ function Card(props) {
     </div>
   );
 }
-// Note: u can not put name,img.tel.email into { } becos card-component has not been moved to card.jsx
-//you can not continue to itemize card becos you have the data already stored in contacts.js
-//testing this with react.dom render
 ReactDOM.render(
   <div>
     <h1>My Contacts</h1>

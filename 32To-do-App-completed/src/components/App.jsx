@@ -20,8 +20,8 @@ function App() {
   
   
   // function handleChange(event) {
-  //   const newValue = event.target.value;
-  //   setInputText(newValue);
+  //   const newValue = event.target.value; ===inputtext
+  //   setInputText(newValue); ===setinputtext
   // }
 
   function addItem(inputText) { //usually setItems has acess to prevoius Items &replaces the prevoius item,but  here it retains it 
