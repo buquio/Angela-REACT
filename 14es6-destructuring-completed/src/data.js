@@ -7,7 +7,11 @@ const animals = [
       water: 3
     }
   },
-  { name: "dog", sound: "woof" }
+
+  { 
+    name: "dog", 
+    sound: "woof" 
+  }
 ];
 
 
@@ -15,7 +19,7 @@ const animals = [
 function useAnimals(animal) {
   return [
     animal.name,
-    function() {
+    function() { //function makesound(){}
       console.log(animal.sound);
     }
   ];

@@ -30,7 +30,7 @@ export default App;
 import React, { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);//destructuring
 
   function increase() {
     setCount(count + 1);
@@ -87,7 +87,7 @@ function App() {
   function handleClick() {
     setHeadingText("Submitted");
   }
-
+ 
   function handleMouseOver() {
     setMouseOver(true);
   }
@@ -128,7 +128,7 @@ function App() {
   }
 
   function handleClick(event) {
-    setHeading(name); //you are setting the headingtext to target.value
+    setHeading(name); //you are setting the headingtext to target.value i.e name
 
     event.preventDefault();
   }
@@ -142,7 +142,7 @@ function App() {
           onChange={handleChange} //on change d event.target value in d input box is saved in name-field  
           type="text"
           placeholder="What's your name?"
-          value={name} //always set value to event.target.value
+          value={name} //sets value to event.target.value
         />
         {/* <button onClick={handleChange}>Submit</button>  */}
         <button type="submit">Submit</button> 
@@ -162,7 +162,7 @@ function ToDoItem(props) {
   const {isDone, setisDone} = useState(false);
 
   function handleClick(){
-    setisDone(prevValue => {
+    setisDone(prevValue => { ///check for isdone-value i.e false & reverse it to true
       return !prevValue; //true
 
     });
@@ -178,7 +178,7 @@ export default ToDoItem;
 
 
 //////////
-// -the code runs from top to bottom but does nothing until d div is clicked
-// -on clicking d handleClick-fxn is called, 
-//then setisdone-fxn is called which check for isdone-value i.e false & reverse it to true
-//then look for any other place isdone is called & apply d 'true'& set the style to line-through 
+// the code runs from top to bottom but does nothing until d div is clicked
+// on clicking the div, the handleClick-fxn is called, 
+// then setisdone-fxn is called which check for isdone-value i.e false & reverse it to true
+// then look for any other place isdone is called & apply d 'true'& set the style to line-through 

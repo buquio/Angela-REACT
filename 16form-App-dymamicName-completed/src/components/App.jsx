@@ -9,9 +9,9 @@ function App() {
   });
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { name, value } = event.target;//input-name, input-value
 
-    setContact(prevValue => {
+    setContact(prevValue => { //const setContact(prevalue)=>
       return {
         ...prevValue,
         [name]: value
@@ -56,7 +56,7 @@ function App() {
         <input
           onChange={handleChange}
           value={contact.fName}
-          name="fName"
+          name="fName" //name property
           placeholder="First Name"
         />
         <input

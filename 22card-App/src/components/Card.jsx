@@ -13,8 +13,8 @@ function Card(props) {
       </div>
 
       <div className="bottom">
-   {/* <p className="info">{props.tel}</p>;
-   <p className="info">{props.email}</p>; */}
+   {/* <p className="info">{props.tel}</p>; */}
+   {/* <p className="info">{props.email}</p>;  */}
 {/* convert the above to a detail-component */}
         <Detail detailInfo={props.tel} />
         <Detail detailInfo={props.email} />

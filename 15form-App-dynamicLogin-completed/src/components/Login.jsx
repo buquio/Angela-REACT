@@ -20,7 +20,7 @@ import Input from "./Input";
 function Login() {
   return (
     <form className="form">
-    {/* the 2 input are input-components */}
+    {/* the 2 input are converted to input-components */}
       <Input type={text} placeholder={Username} />
       <Input type={password} placeholder={Password} />
       <button type="submit">Login</button>

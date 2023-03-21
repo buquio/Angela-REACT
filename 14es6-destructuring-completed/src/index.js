@@ -1,14 +1,14 @@
 import animals, { useAnimals } from "./data";
 import React from "react";
 import ReactDOM from "react-dom";
-import { useAnimals } from "./data";
+// import { useAnimals } from "./data";
 import cars from "./practice";
 
 
 
 //Destructuring Arrays
 console.log(animals);
-const [cat, dog] = animals;
+const [cat, dog] = animals; //destructuring
 //var cat = animals[0]; //or
 console.log(cat);
 
@@ -30,7 +30,7 @@ const {feedingRequirements: {food, water} } = cat;
 console.log(food);
 
 
-const [animalName ,makeSound] = useAnimals
+const [animalName, makeSound] = useAnimals
 console.log(animalName);
 console.log(makeSound());
 
@@ -38,12 +38,12 @@ console.log(makeSound());
 // CHALLENGE: uncomment the code below and see the car stats rendered
 
 const [honda, tesla] = cars;
-// const { speedStats: { topSpeed, zeroToSixty} } = honda;
-// const { speedStats: { topSpeed: hondaTopSpeed, zeroToSixty: hondazeroToSixty } } = honda;
 
+// const { speedStats: { topSpeed: hondaTopSpeed } } = honda;
+const { speedStats: { topSpeed: hondaTopSpeed, zeroToSixty: hondazeroToSixty } } = honda;
+// const { speedStats: { topSpeed: teslaTopSpeed } } = tesla;
+const { speedStats: { topSpeed: teslaTopSpeed, zeroToSixty: teslazeroToSixty } } = tesla;
 
-const { speedStats: { topSpeed: hondaTopSpeed } } = honda;
-const { speedStats: { topSpeed: teslaTopSpeed } } = tesla;
 
 const { coloursByPopularity: [hondaTopColour] } = honda;
 const { coloursByPopularity: [teslaTopColour] } = tesla;
