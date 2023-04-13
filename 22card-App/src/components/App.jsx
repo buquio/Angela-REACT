@@ -141,7 +141,7 @@ function App() {
         name={contacts[2].name}
         img={contacts[2].imgURL}
         tel={contacts[2].phone}
-        email={contacts[2].email}
+        email={contacts[2].email} 
       />
     </div>
   );
@@ -187,9 +187,6 @@ export default App;
 import React from "react";
 import Card from "./Card";
 import contacts from "../contacts";
-
-
-
 
 // function createCard(contact) {
 //   return (
